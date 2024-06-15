@@ -1,14 +1,10 @@
 [
   {
-    "label": "Ads",
-    "value": 32
+    "label": "Classes Attended",
+    "value": 75
   },
   {
-    "label": "Subscriptions",
-    "value": 45
-  },
-  {
-    "label": "Sponsorships",
-    "value": 23
+    "label": "Classes Absent",
+    "value": 25
   }
 ]

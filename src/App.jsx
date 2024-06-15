@@ -4,8 +4,9 @@ import { Bar, Doughnut, Line } from "react-chartjs-2";
 
 import "./App.css";
 
-import revenueData from "./data/revenueData.json";
+import progressData from "./data/progressData.json";
 import sourceData from "./data/sourceData.json";
+import testData from "./data/testData.json";
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
@@ -21,17 +22,17 @@ export const App = () => {
       <div className="dataCard revenueCard">
         <Line
           data={{
-            labels: revenueData.map((data) => data.label),
+            labels: progressData.map((data) => data.label),
             datasets: [
               {
-                label: "Revenue",
-                data: revenueData.map((data) => data.revenue),
+                label: "Recommended Progress",
+                data: progressData.map((data) => data.recommended),
                 backgroundColor: "#064FF0",
                 borderColor: "#064FF0",
               },
               {
-                label: "Cost",
-                data: revenueData.map((data) => data.cost),
+                label: "Student Progress",
+                data: progressData.map((data) => data.actual),
                 backgroundColor: "#FF3030",
                 borderColor: "#FF3030",
               },
@@ -45,7 +46,7 @@ export const App = () => {
             },
             plugins: {
               title: {
-                text: "Monthly Revenue & Cost",
+                text: "Student Course Progress",
               },
             },
           }}
@@ -55,11 +56,11 @@ export const App = () => {
       <div className="dataCard customerCard">
         <Bar
           data={{
-            labels: sourceData.map((data) => data.label),
+            labels: testData.map((data) => data.label),
             datasets: [
               {
                 label: "Count",
-                data: sourceData.map((data) => data.value),
+                data: testData.map((data) => data.value),
                 backgroundColor: [
                   "rgba(43, 63, 229, 0.8)",
                   "rgba(250, 192, 19, 0.8)",
@@ -72,7 +73,7 @@ export const App = () => {
           options={{
             plugins: {
               title: {
-                text: "Revenue Source",
+                text: "Test Scores",
               },
             },
           }}
@@ -88,14 +89,12 @@ export const App = () => {
                 label: "Count",
                 data: sourceData.map((data) => data.value),
                 backgroundColor: [
-                  "rgba(43, 63, 229, 0.8)",
-                  "rgba(250, 192, 19, 0.8)",
-                  "rgba(253, 135, 135, 0.8)",
+                  "rgba(43, 63, 229, 1)",
+                  "rgba(250, 192, 19, 1)",
                 ],
                 borderColor: [
-                  "rgba(43, 63, 229, 0.8)",
-                  "rgba(250, 192, 19, 0.8)",
-                  "rgba(253, 135, 135, 0.8)",
+                  "rgba(256, 256, 256, 1)",
+                  "rgba(256, 256,256, 1)",
                 ],
               },
             ],
@@ -103,7 +102,7 @@ export const App = () => {
           options={{
             plugins: {
               title: {
-                text: "Revenue Sources",
+                text: " Student Attendance",
               },
             },
           }}

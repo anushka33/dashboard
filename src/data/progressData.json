@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Jan",
+    "recommended": 0,
+    "actual": 0
+  },
+  {
+    "label": "Feb",
+    "recommended": 20,
+    "actual": 10
+  },
+  {
+    "label": "Mar",
+    "recommended": 30,
+    "actual": 20
+  },
+  {
+    "label": "Apr",
+    "recommended": 40,
+    "actual": 35
+  },
+  {
+    "label": "May",
+    "recommended": 50,
+    "actual": 40
+  },
+  {
+    "label": "Jun",
+    "recommended": 60,
+    "actual": 55
+  },
+  {
+    "label": "Jul",
+    "recommended": 65,
+    "actual": 65
+  },
+  {
+    "label": "Aug",
+    "recommended": 70,
+    "actual": 65
+  },
+  {
+    "label": "Sep",
+    "recommended": 80,
+    "actual": 70
+  },
+  {
+    "label": "Oct",
+    "recommended": 85,
+    "actual": 80
+  },
+  {
+    "label": "Nov",
+    "recommended": 95,
+    "actual": 80
+  },
+  {
+    "label": "Dec",
+    "recommended": 100,
+    "actual": 95
+  }
+]
