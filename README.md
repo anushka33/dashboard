@@ -7,7 +7,7 @@ In the project directory, you can run:
 
 ### `npm install`
 then
-### 'npm run dev'
+### `npm run dev`
 
 Currently, two official plugins are available:
 
